@@ -17,6 +17,7 @@ public class Task {
     private String assignee;
     private String status;
     
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "sprint_id")
     private Sprint sprint;
